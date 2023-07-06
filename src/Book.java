@@ -3,7 +3,7 @@ import com.sun.jdi.connect.Connector;
 public class Book {
     final String nameBook;
     final String author;
-    final int est;
+    int est;
 
     public Book(String nameBook, String author, int est) {
         this.nameBook = nameBook;
@@ -12,6 +12,8 @@ public class Book {
     }
 
     public void setEst(int est) {
+        this.est=est;
+
 
     }
 }

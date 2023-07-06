@@ -11,5 +11,8 @@ public class Main {
         System.out.println("Автор "+barto.getNameAuthor()+" "+barto.getSurnameAuthor());
         System.out.println("Название "+stihi.nameBook);
         System.out.println("Год выпуска "+ stihi.est);
+        igrirazuma.setEst(2332);
+        System.out.println("Год выпуска "+igrirazuma.est);
+
     }
 }
