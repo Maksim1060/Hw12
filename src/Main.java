@@ -13,6 +13,13 @@ public class Main {
         System.out.println("Год выпуска "+ stihi.est);
         igrirazuma.setEst(2332);
         System.out.println("Год выпуска "+igrirazuma.est);
-
+        System.out.println(shattam);
+     System.out.println(barto);
+     System.out.println(igrirazuma);
+     System.out.println(stihi);
+     System.out.println(shattam.equals(barto));
+     System.out.println(barto.hashCode());
+     System.out.println(igrirazuma.hashCode());
+     System.out.println(stihi.hashCode());
     }
 }
