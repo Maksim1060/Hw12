@@ -3,18 +3,18 @@ import com.sun.jdi.connect.Connector;
 import java.util.Objects;
 
 public class Book {
-    final String nameBook;
+    private final String name;
     private Author author;
-    int est;
+     private final int est;
 
-    public Book(String nameBook, Author author, int est) {
-        this.nameBook = nameBook;
+    public Book(String name, Author author, int est) {
+        this.name = name;
         this.author = author;
         this.est = est;
     }
 
-    public String getNameBook() {
-        return this.nameBook;
+    public String getName() {
+        return this.name;
     }
 
     public Author getAuthor() {
@@ -30,7 +30,7 @@ public class Book {
     }
 
     public String toString() {
-        return getAuthor() + " " + getNameBook() + " " + getEst();
+        return getAuthor() + " " + getName() + " " + getEst();
     }
 
     @Override
@@ -38,11 +38,11 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return est == book.est && Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
+        return est == book.est && Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameBook, author, est);
+        return Objects.hash(name, author, est);
     }
 }
