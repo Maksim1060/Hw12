@@ -3,9 +3,9 @@ import com.sun.jdi.connect.Connector;
 import java.util.Objects;
 
 public class Book {
-    private final String name;
+     private String name;
     private Author author;
-     private final int est;
+     private int est;
 
     public Book(String name, Author author, int est) {
         this.name = name;
